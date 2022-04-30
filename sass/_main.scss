@@ -12,13 +12,13 @@
 
 .container {
     max-width: 647px;
-    width: 315px;
-    margin: 0 auto;
+    min-width: 315px;
+    margin: 0 30px;
 
     &--wide {
-        width: 345px;
+        min-width: 345px;
         max-width: 647px;
-
+        margin: 0;
     }
 }
 
@@ -38,4 +38,5 @@
     background-repeat: no-repeat;
     background-position: top center;
     
+
 }

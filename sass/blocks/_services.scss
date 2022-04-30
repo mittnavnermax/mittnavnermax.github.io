@@ -20,7 +20,46 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        margin-bottom: 30px;
+
+    }
+
+    &__offers {
+        display: flex;
+        flex-direction: column;
+
+        &-item {
+            margin-top: 30px;
+
+            &-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 92px;
+                height: 92px;
+                background-color: white;
+                border-radius: 24px;
+                margin-bottom: 30px;
+
+            }
+
+            &-heading {
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 27px;
+                color: $active-regular-color;
+                margin-bottom: 15px;
+
+            }
+
+            &-paragraph {
+                font-size: 16px;
+                line-height: 26px;
+                color: white;
+
+            }
+
+        }
+
 
     }
 
