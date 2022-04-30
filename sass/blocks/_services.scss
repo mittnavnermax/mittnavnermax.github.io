@@ -1,0 +1,27 @@
+.services {
+
+    &__link {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #24A3FF;
+        margin-bottom: 10px;
+
+    }
+
+    &__heading {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        background: $gradient-red-text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 30px;
+
+    }
+
+}

@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.body {
+    font-family: 'montserrat', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.container {
+    max-width: 647px;
+    width: 315px;
+    margin: 0 auto;
+
+    &--wide {
+        width: 345px;
+        max-width: 647px;
+
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.wrapper {
+    background-image: url(../img/background-img.svg), $gradient-supersoft;
+    background-repeat: no-repeat;
+    background-position: top center;
+    
+}
