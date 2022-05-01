@@ -26,14 +26,26 @@
 
 .container {
   max-width: 647px;
-  min-width: 315px;
+  min-width: 255px;
   margin: 0 30px;
 }
 
 .container--wide {
-  min-width: 345px;
-  max-width: 647px;
-  margin: 0;
+  min-width: 285px;
+  margin: 0 auto;
+}
+
+.container--flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .visually-hidden {
@@ -236,6 +248,15 @@
   margin-bottom: 75px;
 }
 
+.solution__arrow:hover svg path {
+  stroke: #F0145A;
+}
+
+.solution__arrow:hover {
+  border-color: #F0145A;
+  opacity: 1;
+}
+
 .solution__arrow svg {
   margin-top: 3px;
 }
@@ -307,18 +328,8 @@
   margin-bottom: 30px;
 }
 
-.services__link {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #24A3FF;
-  margin-bottom: 10px;
-}
-
 .services__heading {
+  margin-top: 10px;
   font-weight: 700;
   font-size: 38px;
   line-height: 46px;
@@ -340,6 +351,10 @@
 
 .services__offers-item {
   margin-top: 30px;
+}
+
+.services__offers-item:last-of-type {
+  margin-bottom: 60px;
 }
 
 .services__offers-item-icon {
@@ -375,6 +390,7 @@
 
 .team {
   position: relative;
+  padding-top: 50px;
 }
 
 .team::after {
@@ -401,6 +417,92 @@
   right: 40px;
   top: 10px;
   bottom: 0;
+}
+
+.team__card {
+  display: none;
+}
+
+.team__card--activated {
+  display: block;
+}
+
+.team__card-pic {
+  height: 500px;
+  width: 100%;
+  background-image: url(../../img/team-face.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.team__card-text {
+  padding-top: 30px;
+  background-color: #EDEDF7;
+  border-radius: 0px 0px 12px 12px;
+  padding-bottom: 30px;
+}
+
+.team__card-box {
+  margin: 0 30px;
+}
+
+.team__card-box-quote {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  margin-bottom: 30px;
+}
+
+.team__card-box-name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #B3B3BA;
+}
+
+.team__card-box-job {
+  font-size: 14px;
+  line-height: 22px;
+  color: #B3B3BA;
+}
+
+.team__scroll {
+  margin-top: 30px;
+}
+
+.team__scroll-button {
+  background-color: #24A3FF;
+  border: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  opacity: 0.2;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.team__scroll-button--activated {
+  opacity: 1;
+}
+
+.team__scroll-button:last-of-type {
+  margin-right: 0;
+}
+
+.page-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #24A3FF;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -12,13 +12,19 @@
 
 .container {
     max-width: 647px;
-    min-width: 315px;
+    min-width: 255px;
     margin: 0 30px;
 
     &--wide {
-        min-width: 345px;
-        max-width: 647px;
-        margin: 0;
+        min-width: 285px;
+        margin: 0 auto;
+    }
+
+    &--flex-column{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
     }
 }
 

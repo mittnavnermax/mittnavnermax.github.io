@@ -1,5 +1,6 @@
 .team {
     position: relative;
+    padding-top: 50px;
 
     &::after {
         content: '';
@@ -28,6 +29,94 @@
         top: 10px;
         bottom: 0;
 
+
+    }
+
+    &__card {
+        display: none;
+
+        &--activated {
+            display: block;
+
+        }
+
+        &-pic {
+            height: 500px;
+            width: 100%;
+
+            background-image: url(../../img/team-face.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 12px 12px 0px 0px;
+            
+        }
+
+        &-text {
+            padding-top: 30px;
+            background-color: $grey-big-alt-color;
+            border-radius: 0px 0px 12px 12px;
+            padding-bottom: 30px;
+
+        }
+
+        &-box {
+            margin: 0 30px;
+
+            &-quote {
+                background: $gradient-red-text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 37px;
+                margin-bottom: 30px;
+
+            }
+
+            &-name {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                color: #B3B3BA;
+
+            }
+
+            &-job {
+                font-size: 14px;
+                line-height: 22px;
+                color: #B3B3BA;
+
+            }
+
+        }
+
+    }
+
+    &__scroll {
+        margin-top: 30px;
+
+        &-button {
+            background-color: $active-regular-color;
+            border: none;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            opacity: 0.2;
+            margin-right: 15px;
+            cursor: pointer;
+
+            &--activated {
+                opacity: 1;
+
+            }
+
+            &:last-of-type {
+                margin-right: 0;
+
+            }
+        }
 
     }
 

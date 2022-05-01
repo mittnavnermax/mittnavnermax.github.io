@@ -30,6 +30,17 @@
         align-items: center;
         margin-bottom: 75px;
 
+        &:hover svg path {
+            stroke: $accent-color;
+
+        }
+
+        &:hover {
+            border-color: $accent-color;
+            opacity: 1;
+
+        }
+
         & svg {
             margin-top: 3px;
 
