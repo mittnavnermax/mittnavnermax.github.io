@@ -73,6 +73,7 @@
             cursor: pointer;
             padding: 0;
             margin-right: 30px;
+            -webkit-appearance: none;
 
             &--activated {
                 background: $gradient-red-text;

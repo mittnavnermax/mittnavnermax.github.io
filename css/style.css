@@ -289,6 +289,7 @@
   cursor: pointer;
   padding: 0;
   margin-right: 30px;
+  -webkit-appearance: none;
 }
 
 .solution__scroll-button--activated {
@@ -485,6 +486,7 @@
   opacity: 0.2;
   margin-right: 15px;
   cursor: pointer;
+  -webkit-appearance: none;
 }
 
 .team__scroll-button--activated {
@@ -503,6 +505,101 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #24A3FF;
+}
+
+.partners {
+  padding-top: 60px;
+  text-align: center;
+}
+
+.partners__heading {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323264;
+  margin-bottom: 30px;
+}
+
+.partners__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.partners__box-item {
+  height: 120px;
+  width: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.partners__box-item--hidden {
+  display: none;
+}
+
+.partners__box-item--hillel {
+  background-image: url(../../img/hillel.png);
+  background-color: #1C4280;
+}
+
+.partners__box-item--wannabiz {
+  background-image: url(../../img/wannabiz.png);
+  background-color: #143646;
+}
+
+.partners__box-item--tapgerine {
+  background-image: url(../../img/tapgerine.png);
+  background-color: #F48B30;
+}
+
+.partners__box-item--3d-look {
+  background-image: url(../../img/3d-look.png);
+  background-color: #9E4DC3;
+}
+
+.partners__box-item--orangear {
+  background-image: url(../../img/orangear.png);
+  background-color: #FD9339;
+}
+
+.partners__box-item--adtelligent {
+  background-image: url(../../img/adtelligent.png);
+  background-color: #E2E2E4;
+}
+
+.partners__box-item--clickky {
+  background-image: url(../../img/clickky.png);
+  background-color: #C71C36;
+}
+
+.partners__box-item--ecoleasing {
+  background-image: url(../../img/infratek.png);
+  background-color: #DCF3F9;
+}
+
+.partners__box-item--infratek {
+  background-image: url(../../img/infratek.png);
+  background-color: #EAEAEA;
+}
+
+.partners__box-item--citypark {
+  background-image: url(../../img/city-park.png);
+  background-color: #282240;
+}
+
+.partners__box-item--art-print {
+  background-image: url(../../img/art-print.png);
+  background-color: #1D4568;
+}
+
+.partners__box-item--ultimate-card {
+  background-image: url(../../img/ultimate-card.png);
+  background-color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */

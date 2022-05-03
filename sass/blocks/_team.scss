@@ -14,7 +14,6 @@
         left: 20px;
         right: 20px;
 
-
     }
 
     &::before {
@@ -106,6 +105,7 @@
             opacity: 0.2;
             margin-right: 15px;
             cursor: pointer;
+            -webkit-appearance: none;
 
             &--activated {
                 opacity: 1;

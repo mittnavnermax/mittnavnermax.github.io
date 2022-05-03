@@ -1,0 +1,105 @@
+.partners {
+    padding-top: 60px;
+    text-align: center;
+
+    &__heading {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $main-color;
+        margin-bottom: 30px;
+
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+
+        &-item {
+            height: 120px;
+            width: auto;
+            background-repeat: no-repeat;
+            background-position: center center;
+
+            &--hidden {
+                display: none;
+
+            }
+
+            &--hillel {
+                background-image: url(../../img/hillel.png);
+                background-color: #1C4280;
+
+            }
+
+            &--wannabiz {
+                background-image: url(../../img/wannabiz.png);
+                background-color: #143646;
+
+            }
+
+            &--tapgerine {
+                background-image: url(../../img/tapgerine.png);
+                background-color: #F48B30;
+
+            }
+
+            &--3d-look {
+                background-image: url(../../img/3d-look.png);
+                background-color: #9E4DC3;
+
+            }
+
+            &--orangear {
+                background-image: url(../../img/orangear.png);
+                background-color: #FD9339;
+
+            }
+
+            &--adtelligent {
+                background-image: url(../../img/adtelligent.png);
+                background-color: #E2E2E4;
+
+            }
+
+            &--clickky {
+                background-image: url(../../img/clickky.png);
+                background-color: #C71C36;
+
+            }
+
+            &--ecoleasing {
+                background-image: url(../../img/infratek.png);
+                background-color: #DCF3F9;
+
+            }
+
+            &--infratek {
+                background-image: url(../../img/infratek.png);
+                background-color: #EAEAEA;
+
+            }
+
+            &--citypark {
+                background-image: url(../../img/city-park.png);
+                background-color: #282240;
+
+            }
+
+            &--art-print {
+                background-image: url(../../img/art-print.png);
+                background-color: #1D4568;
+
+            }
+
+            &--ultimate-card {
+                background-image: url(../../img/ultimate-card.png);
+                background-color: #000000;
+
+            }
+
+        }
+
+    }
+}
