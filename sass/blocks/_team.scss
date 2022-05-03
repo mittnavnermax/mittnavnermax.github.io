@@ -62,19 +62,8 @@
         &-box {
             margin: 0 30px;
 
-            &-quote {
-                background: $gradient-red-text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
-                font-weight: 700;
-                font-size: 30px;
-                line-height: 37px;
-                margin-bottom: 30px;
-
-            }
-
             &-name {
+                margin-top: 30px;
                 font-weight: 700;
                 font-size: 16px;
                 line-height: 20px;
@@ -106,6 +95,8 @@
             margin-right: 15px;
             cursor: pointer;
             -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
 
             &--activated {
                 opacity: 1;
