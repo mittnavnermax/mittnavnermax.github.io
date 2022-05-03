@@ -94,9 +94,9 @@
             opacity: 0.2;
             margin-right: 15px;
             cursor: pointer;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
+            -webkit-appearance: auto;
+            -moz-appearance: auto;
+            appearance: auto;
 
             &--activated {
                 opacity: 1;

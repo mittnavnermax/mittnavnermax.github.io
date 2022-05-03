@@ -73,9 +73,9 @@
             cursor: pointer;
             padding: 0;
             margin-right: 30px;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
+            -webkit-appearance: auto;
+            -moz-appearance: auto;
+            appearance: auto;
 
             &--activated {
                 background: $gradient-red-text;

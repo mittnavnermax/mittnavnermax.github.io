@@ -289,9 +289,9 @@
   cursor: pointer;
   padding: 0;
   margin-right: 30px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  -webkit-appearance: auto;
+  -moz-appearance: auto;
+  appearance: auto;
 }
 
 .solution__scroll-button--activated {
@@ -478,9 +478,9 @@
   opacity: 0.2;
   margin-right: 15px;
   cursor: pointer;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  -webkit-appearance: auto;
+  -moz-appearance: auto;
+  appearance: auto;
 }
 
 .team__scroll-button--activated {
@@ -610,24 +610,17 @@
   margin-bottom: 30px;
 }
 
-.publications__box-item-pic {
+.publications__box-item-pic-link {
+  display: block;
   height: 200px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+.publications__box-item-pic-link img {
   border-radius: 8px 8px 0px 0px;
-}
-
-.publications__box-item-pic--first {
-  background-image: url(../../img/publication-1.jpg);
-}
-
-.publications__box-item-pic--second {
-  background-image: url(../../img/publication-2.jpg);
-}
-
-.publications__box-item-pic--third {
-  background-image: url(../../img/publication-3.jpg);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .publications__box-item-text {
