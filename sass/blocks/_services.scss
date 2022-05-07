@@ -15,14 +15,10 @@
     &__offers {
         display: flex;
         flex-direction: column;
+        padding-bottom: 60px;
 
         &-item {
             margin-top: 30px;
-
-            &:last-of-type {
-                margin-bottom: 60px;
-
-            }
 
             &-icon {
                 display: flex;
@@ -54,6 +50,23 @@
 
         }
 
+
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .services {
+        &__offers {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-column-gap: 60px;
+            &-item {
+                margin-top: 60px;
+
+            }
+        }
 
     }
 

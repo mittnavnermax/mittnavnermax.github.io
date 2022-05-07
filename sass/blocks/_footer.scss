@@ -1,0 +1,191 @@
+.footer {
+    background-color: $grey-color;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-address {
+            font-size: 16px;
+            line-height: 20px;
+            color: $main-color;
+
+        }
+
+        &-link {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $active-regular-color;
+            margin-top: 10px;
+            margin-bottom: 21px;
+            transition: color 0.3s;
+
+            &:hover {
+                color: $accent-color
+
+            }
+
+        }
+
+        &-facebook {
+            text-decoration: none;
+            font-size: 0;
+
+            &:hover svg path{
+                fill: $accent-color
+
+            }
+
+            & path{
+                fill: $active-regular-color;
+                transition: fill 0.3s;
+            }
+
+        }
+
+        &-phone {
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+
+            &-link {
+                text-decoration: none;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                color: $main-alt-color;
+
+            }
+        }
+
+        &-email {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: $active-regular-color;
+            text-decoration: none;
+            margin-bottom: 30px;
+            transition: color 0.3s;
+
+            &:hover {
+                color: $accent-color
+
+            }
+
+        }
+
+        &-copyright {
+            font-size: 16px;
+            line-height: 20px;
+            color: $grey-text-color;
+            text-align: center;
+
+        }
+
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .footer {
+
+        &__box {
+            display: grid;
+            grid-template-columns: auto auto auto auto 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-row-gap: 21px;
+
+            &-link {
+                grid-column-start: 4;
+                margin: 0;
+
+            }
+
+            &-address {
+                grid-column-start: 1;
+                grid-column-end: 4;
+                display: inline-flex;
+                align-items: center;
+                margin-right: 10px;
+
+                &::after {
+                    content: '';
+                    width: 6px;
+                    height: 6px;
+                    background-color: $grey-text-color;
+                    display: inline-flex;
+                    border-radius: 50%;
+                    margin-left: 6px;
+                }
+
+            }
+
+            &-copyright {
+                grid-column-start: -1;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                text-align: right;
+
+            }
+
+            &-facebook {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                margin-right: 10px;
+
+            }
+
+            &-phone {
+                grid-column-start: 2;
+                grid-row-start: 2;
+                margin: 0;
+                display: inline-flex;
+                align-items: center;
+
+
+            &::before {
+                content: '';
+                width: 6px;
+                height: 6px;
+                background-color: $grey-text-color;
+                display: inline-flex;
+                border-radius: 50%;
+                margin-right: 6px;
+            }
+    
+            &::after {
+                content: '';
+                width: 6px;
+                height: 6px;
+                background-color: $grey-text-color;
+                display: inline-flex;
+                border-radius: 50%;
+                margin-left: 6px;
+            }
+            
+
+            }
+
+            &-email {
+                margin: 0;
+                grid-column-start: 3;
+                grid-column-end: span 3;
+                grid-row-start: 2;
+                margin-left: 10px;
+
+            }
+
+
+        }
+
+    }
+
+}

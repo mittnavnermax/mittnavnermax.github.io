@@ -11,13 +11,15 @@
 }
 
 .container {
-    max-width: 647px;
-    min-width: 255px;
-    margin: 0 30px;
+    max-width: 767px;
+    min-width: 315px;
+    margin: 0 auto;
+    padding: 0 30px;
 
     &--wide {
-        min-width: 285px;
-        margin: 0 auto;
+        width: 100%;
+        padding: 0;
+        
     }
 
     &--flex-column{
@@ -45,4 +47,19 @@
     background-position: top center;
     
 
+}
+
+@media  screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        min-width: 648px;
+        max-width: 1023px;
+        padding: 0 60px;
+
+        &--wide {
+            width: inherit;
+
+        }
+
+    }
+    
 }

@@ -33,6 +33,7 @@
 
     &__card {
         display: none;
+        width: 100%;
 
         &--activated {
             display: block;
@@ -75,6 +76,7 @@
                 font-size: 14px;
                 line-height: 22px;
                 color: #B3B3BA;
+                margin-top: 6px;
 
             }
 
@@ -94,9 +96,6 @@
             opacity: 0.2;
             margin-right: 15px;
             cursor: pointer;
-            -webkit-appearance: auto;
-            -moz-appearance: auto;
-            appearance: auto;
 
             &--activated {
                 opacity: 1;
