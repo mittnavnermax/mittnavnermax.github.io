@@ -189,3 +189,100 @@
     }
 
 }
+
+@media screen and (min-width: 1024px) {
+    .footer {
+
+        &__box {
+            display: grid;
+            grid-template-columns: auto auto auto auto 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-row-gap: 21px;
+
+            &-link {
+                grid-column-start: 4;
+                margin: 0;
+
+            }
+
+            &-address {
+                grid-column-start: 1;
+                grid-column-end: 4;
+                display: inline-flex;
+                align-items: center;
+                margin-right: 10px;
+
+                &::after {
+                    content: '';
+                    width: 6px;
+                    height: 6px;
+                    background-color: $grey-text-color;
+                    display: inline-flex;
+                    border-radius: 50%;
+                    margin-left: 6px;
+                }
+
+            }
+
+            &-copyright {
+                grid-column-start: -1;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                text-align: right;
+
+            }
+
+            &-facebook {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                margin-right: 10px;
+
+            }
+
+            &-phone {
+                grid-column-start: 2;
+                grid-row-start: 2;
+                margin: 0;
+                display: inline-flex;
+                align-items: center;
+
+
+            &::before {
+                content: '';
+                width: 6px;
+                height: 6px;
+                background-color: $grey-text-color;
+                display: inline-flex;
+                border-radius: 50%;
+                margin-right: 6px;
+            }
+    
+            &::after {
+                content: '';
+                width: 6px;
+                height: 6px;
+                background-color: $grey-text-color;
+                display: inline-flex;
+                border-radius: 50%;
+                margin-left: 6px;
+            }
+            
+
+            }
+
+            &-email {
+                margin: 0;
+                grid-column-start: 3;
+                grid-column-end: span 3;
+                grid-row-start: 2;
+                margin-left: 10px;
+
+            }
+
+
+        }
+
+    }
+
+}

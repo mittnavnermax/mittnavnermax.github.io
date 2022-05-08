@@ -125,3 +125,25 @@
     }
 
 }
+
+@media  screen and (min-width: 1024px) {
+    .partners {
+        
+        &__box {
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            &-item {
+                width: 25%;
+
+                &--hidden {
+                    display: block;
+
+                }
+            }
+
+        }
+
+    } 
+
+}

@@ -113,6 +113,7 @@
             font-size: 20px;
             line-height: 24px;
             color: white;
+            margin-bottom: 30px;
 
         }
 
@@ -150,6 +151,12 @@
         &__text {
             padding-top: 60px;
 
+            & h3 {
+                font-size: 30px;
+                line-height: 37px;
+
+            }
+
             & p {
                 margin-bottom: 60px;
 
@@ -158,5 +165,133 @@
         }
 
     }
+
+}
+
+@media  screen and (min-width: 1024px) and (max-width: 1439px) {
+    .solution {
+        padding-top: 245px;
+
+        &__title {
+            margin-bottom: 289px;
+
+        }
+
+        &__arrow {
+            margin-bottom: 90px;
+
+        }
+
+        &__scrollbox {
+            display: flex;
+            margin-bottom: 60px;
+
+        }
+
+        &__scroll {
+            margin-bottom: 0;
+            flex-direction: column;
+            width: 48%;
+            padding-right: 60px;
+            margin-right: auto;
+            align-items: flex-end;
+            justify-content: space-around;
+            align-self: unset;
+
+            &-button {
+                margin-right: 0;
+
+            }
+        }
+
+        &__text {
+            width: 52%;
+            padding-top: 0;
+            border-top: none;
+            padding-left: 60px;
+            border-left-width: 4px;
+            border-left-style: solid;
+            border-left-color: rgba(255, 255, 255, 0.3);
+
+            & h3 {
+                font-size: 30px;
+                line-height: 37px;
+
+            }
+
+            & p {
+                margin-bottom: 0;
+
+            }
+
+        }
+
+    }
+
+
+}
+
+@media  screen and (min-width: 1440px) {
+    .solution {
+        padding-top: 245px;
+
+        &__title {
+            margin-bottom: 289px;
+
+        }
+
+        &__arrow {
+            margin-bottom: 90px;
+
+        }
+
+        &__scrollbox {
+            display: flex;
+            margin-bottom: 60px;
+
+        }
+
+        &__scroll {
+            margin-bottom: 0;
+            flex-direction: column;
+            width: 40%;
+            padding-right: 60px;
+            margin-right: auto;
+            align-items: flex-end;
+            justify-content: space-around;
+            align-self: unset;
+
+            &-button {
+                margin-right: 0;
+
+            }
+        }
+
+        &__text {
+            width: 60%;
+            padding-top: 0;
+            border-top: none;
+            padding-left: 60px;
+            padding-bottom: 43px;
+            padding-top: 43px;
+            border-left-width: 4px;
+            border-left-style: solid;
+            border-left-color: rgba(255, 255, 255, 0.3);
+
+            & h3 {
+                font-size: 30px;
+                line-height: 37px;
+
+            }
+
+            & p {
+                margin-bottom: 0;
+
+            }
+
+        }
+
+    }
+
 
 }

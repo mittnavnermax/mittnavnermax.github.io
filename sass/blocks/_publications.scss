@@ -39,6 +39,12 @@
                         line-height: 20px;
                         color: $active-active-color;
                         text-decoration: none;
+                        transition: color 0.3s;
+
+                        &:hover {
+                            color: $accent-color;
+
+                        }
 
                     }
 
@@ -98,6 +104,34 @@
 
                 &:last-of-type .publications__box-item-text {
                     height: auto;
+
+                }
+            }
+
+        }
+
+    }
+
+}
+
+@media  screen and (min-width: 1024px) {
+    .publications {
+
+        &__box {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-column-gap: 30px;
+            grid-row-gap: 30px;
+            padding-bottom: 30px;
+
+            &-item {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 0;
+
+                &-text {
+                    height: 100%;
 
                 }
             }

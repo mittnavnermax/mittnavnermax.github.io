@@ -112,3 +112,30 @@
 
 
 }
+@media  screen and (min-width: 1024px) {
+    .team {
+
+        &__card {
+            
+            &--activated {
+                display: flex;
+
+            }
+
+            &-pic {
+                width: 44%;
+                height: auto;
+                border-radius: 12px 0 0 12px;
+
+            }
+            &-text {
+                width: 56%;
+                border-radius: 0 12px 12px 0;
+
+            }
+
+        }
+
+    }
+
+}
