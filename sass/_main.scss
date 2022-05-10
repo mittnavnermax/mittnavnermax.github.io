@@ -41,6 +41,12 @@
     clip: rect(0 0 0 0);
 }
 
+.img-responsive {
+    height: 100%;
+    object-fit: contain;
+
+}
+
 .wrapper {
     background-image: url(../img/background-img.svg), $gradient-supersoft;
     background-repeat: no-repeat;

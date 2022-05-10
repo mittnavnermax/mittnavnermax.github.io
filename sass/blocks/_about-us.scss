@@ -3,11 +3,43 @@
     
     &__box {
 
+        &-pros {
+            margin-top: 30px;
+            padding-left: 30px ;
+            border-left: $grey-separator-color solid 4px;
 
-        &-text {
-            margin-top: 28px;
-            font-size: 19px;
-            line-height: 30px;
+            &-item {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 40px;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+
+                }
+
+                &-heading {
+                    font-size: 36px;
+                    line-height: 44px;
+                    text-align: center;
+                    background: $gradient-red-text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+
+                }
+                    
+                &-text {
+                    margin-top: 10px;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: $main-color;
+
+                }
+
+                
+            }
 
         }
     }

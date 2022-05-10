@@ -1,0 +1,43 @@
+.our-team {
+    padding-top: 30px;
+    padding-bottom: 60px;
+
+    &__background {
+        height: 144px;
+        background-size: cover;
+        background-image: url(../../img/team-mobile.jpg);
+        background-color: #3a3437;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        &-text {
+            font-size: 36px;
+            line-height: 44px;
+            text-align: center;
+            letter-spacing: 13px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            opacity: 0.8;
+            text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+
+        }
+
+    }
+
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .our-team {
+
+        &__background {
+            background-image: url(../../img/team-mobile@2x.jpg);
+
+        }
+
+    }
+
+}
