@@ -1,0 +1,36 @@
+.scroll-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-button {
+        background-color: $active-regular-color;
+        border: none;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        opacity: 0.2;
+        margin-right: 15px;
+        cursor: pointer;
+        transition: opacity 0.3s;
+
+        &:hover {
+            opacity: 0.6;
+
+        }
+
+        &--activated {
+            opacity: 1;
+
+        }
+
+        &:last-of-type {
+            margin-right: 0;
+
+        }
+    }
+
+    
+
+}

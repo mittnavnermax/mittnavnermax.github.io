@@ -1,13 +1,18 @@
 .publications {
     padding-top: 30px;
     background-color: $grey-color;
+    padding-bottom: 30px;
 
     &__box {
         margin-top: 30px;
-        border-bottom: $grey-separator-color solid 4px;
 
         &-item {
             margin-bottom: 30px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+
+            }
 
             &-pic {
 
@@ -77,7 +82,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .publications {
-
+        padding-bottom: 0;
         &__box {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -116,6 +121,7 @@
 
 @media  screen and (min-width: 1024px) {
     .publications {
+        padding-bottom: 0;
 
         &__box {
             display: grid;

@@ -1,0 +1,37 @@
+.achievements {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: $grey-color;
+
+    &__heading {
+        margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $main-color;
+
+    }
+
+    &__box {
+        padding: 0 60px;
+
+        &-item {
+            height: 90px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 12px;
+            
+            &--hidden {
+                display: none;
+
+            }
+
+        }
+
+    }
+
+}
