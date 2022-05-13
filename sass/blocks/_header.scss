@@ -208,7 +208,7 @@
 
         }
 
-        & a{
+        &-link{
             font-weight: 700;
             font-size: 16px;
             line-height: 20px;
@@ -220,7 +220,12 @@
             transition: color 0.3s;
             margin-bottom: 15px;
 
-            &:hover {
+            &--activated {
+                color: $accent-color;
+
+            }
+
+            &:hover :not(.header__nav-link--activated){
                 background-color: $grey-separator-color;                
 
             }
@@ -311,6 +316,41 @@
             padding-left: 0;
             width: 99px;
 
+            &-list {
+
+                &-item {
+
+                    &--white {
+                        
+                        &:hover:not(.header__languages-list-item--activated) {
+                            background-color: $grey-color
+        
+                        }
+
+                    }
+    
+                }
+
+            }
+
+        }
+
+        &__page {
+            justify-content: flex-end;
+            grid-column-start: 2;
+            grid-row-start: 2;
+            font-size: 36px;
+            line-height: 44px;
+            margin-right: 12px;
+            height: 100%;
+
+            &::before {
+                height: 47px;
+                width: 5px;
+                align-self: flex-start;
+
+            }
+
         }
 
         &__phone {
@@ -335,6 +375,11 @@
             width: 36px;
             grid-row-start: 1;
             grid-column-start: 4;
+
+            & path {
+                fill: $grey-text-color;
+
+            }
     
         }
     
@@ -352,7 +397,7 @@
             grid-column-start: 1;
             grid-column-end: span 3;
 
-            & a{
+            &-link {
                 font-weight: 700;
                 padding: 0;
                 font-size: 16px;
@@ -369,8 +414,23 @@
                 background-color: transparent;
                 transition: color 0.3s;
                 transition: border 0.3s;
+
+                &--white {
+                    color: $active-regular-color;
     
-                &:hover {
+                    &:hover {
+                        border-bottom-color: $active-regular-color;
+
+                    }
+                }
+
+                &--activated {
+                    color: $accent-color;
+                    border-bottom-color: $accent-color;
+    
+                }
+    
+                &:hover :not(.header__nav-link--activated){
                     background-color: transparent;
                     border-bottom-color: white;
     
@@ -469,7 +529,7 @@
             grid-column-start: -1;
             grid-column-end: -5;
     
-            & a {
+            &-link {
                 font-weight: 700;
                 padding: 0;
                 font-size: 16px;
@@ -486,6 +546,11 @@
                 background-color: transparent;
                 transition: color 0.3s;
                 transition: border 0.3s;
+
+                &--white {
+                    color: $active-regular-color;
+    
+                }
     
                 &:hover {
                     background-color: transparent;

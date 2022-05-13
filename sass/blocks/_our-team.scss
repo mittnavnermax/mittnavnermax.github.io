@@ -6,7 +6,7 @@
         height: 144px;
         background-size: cover;
         background-image: url(../../img/team-mobile.jpg);
-        background-color: #3a3437;
+        background-color: #666689;
         background-repeat: no-repeat;
         background-position: center center;
         display: flex;
@@ -28,16 +28,50 @@
 
     }
 
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        .our-team {
+    
+            &__background {
+                background-image: url(../../img/team-mobile@2x.jpg);
+    
+            }
+    
+        }
+    
+    }
+
 }
 
-@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media  screen and (min-width: 768px) and (max-width: 1023px) {
     .our-team {
 
         &__background {
-            background-image: url(../../img/team-mobile@2x.jpg);
+            height: 233px;
+            background-image: url(../../img/team-tablet.jpg);
+            margin-bottom: 60px;
+
+            &-text {
+                font-size: 46px;
+                line-height: 56px;
+                letter-spacing: 63px;
+
+            }
 
         }
 
+
     }
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        .our-team {
+    
+            &__background {
+                background-image: url(../../img/team-tablet@2x.png);
+    
+            }
+    
+        }
+    
+    }
+
 
 }

@@ -100,8 +100,9 @@
         &__box {
             display: grid;
             grid-template-columns: auto auto auto auto 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
             grid-row-gap: 21px;
+            padding: 30px 125px;
 
             &-link {
                 grid-column-start: 4;
@@ -129,10 +130,10 @@
             }
 
             &-copyright {
-                grid-column-start: -1;
-                grid-column-end: 5;
-                grid-row-start: 1;
-                text-align: right;
+                grid-column-start: 1;
+                grid-column-end: -1;
+                grid-row-start: 3;
+                text-align: center;
 
             }
 
