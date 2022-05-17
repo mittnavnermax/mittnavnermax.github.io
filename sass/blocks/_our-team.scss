@@ -28,17 +28,6 @@
 
     }
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        .our-team {
-    
-            &__background {
-                background-image: url(../../img/team-mobile@2x.jpg);
-    
-            }
-    
-        }
-    
-    }
 
 }
 
@@ -65,7 +54,92 @@
         .our-team {
     
             &__background {
-                background-image: url(../../img/team-tablet@2x.png);
+                background-image: url(../../img/team-tablet@2x.jpg);
+    
+            }
+    
+        }
+    
+    }
+
+
+}
+
+@media  screen and (min-width: 1024px) and (max-width: 1440px) {
+    .our-team {
+
+        &__background {
+            height: 311px;
+            background-image: url(../../img/team-tablet-hd.jpg);
+            margin-bottom: 60px;
+
+            &-text {
+                font-size: 86px;
+                line-height: 105px;
+                letter-spacing: 63px;
+
+            }
+
+        }
+
+        &__box {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1.1fr 1fr;
+            grid-column-gap: 60px;
+
+        }
+
+
+    }
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        .our-team {
+    
+            &__background {
+                background-image: url(../../img/team-tablet-hd@2x.jpg);
+    
+            }
+    
+        }
+    
+    }
+
+
+}
+
+@media  screen and (min-width: 1440px) {
+    .our-team {
+
+        &__background {
+            height: 438px;
+            background-image: url(../../img/team-desktop.jpg);
+            margin-bottom: 60px;
+
+            &-text {
+                font-size: 96px;
+                line-height: 117px;
+                letter-spacing: 63px;
+
+            }
+
+        }
+
+        &__box {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1.5fr 1fr;
+            grid-column-gap: 60px;
+
+        }
+
+
+    }
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        .our-team {
+    
+            &__background {
+                background-image: url(../../img/team-desktop@2x.jpg);
     
             }
     

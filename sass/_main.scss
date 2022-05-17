@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 .body {
@@ -11,7 +12,7 @@
 }
 
 .container {
-    max-width: 767px;
+    max-width: 1320px;
     min-width: 315px;
     margin: 0 auto;
     padding: 0 30px;
@@ -48,7 +49,7 @@
 }
 
 .wrapper {
-    background-image: url(../img/background-img.svg), $gradient-supersoft;
+    background-image: url(../img/background-mobile.svg), $gradient-supersoft;
     background-repeat: no-repeat;
     background-position: top center;
 
@@ -61,8 +62,6 @@
 
 @media  screen and (min-width: 768px) and (max-width: 1023px) {
     .container {
-        min-width: 648px;
-        max-width: 1023px;
         padding: 0 60px;
 
         &--wide {
@@ -70,14 +69,19 @@
 
         }
 
+    }
+
+    .wrapper {
+        background-image: url(../img/background-img.svg), $gradient-supersoft;
+        background-repeat: no-repeat;
+        background-position: top center;
+    
     }
     
 }
 
 @media  screen and (min-width: 1024px) and (max-width: 1439px) {
     .container {
-        min-width: 904px;
-        max-width: 1439px;
         padding: 0 60px;
 
         &--wide {
@@ -86,13 +90,18 @@
         }
 
     }
+
+    .wrapper {
+        background-image: url(../img/background-img.svg), $gradient-supersoft;
+        background-repeat: no-repeat;
+        background-position: top center;
+    
+    }
     
 }
 
 @media screen and (min-width: 1440px) {
     .container {
-        min-width: 1320px;
-        max-width: 1980px;
         padding: 0 60px;
 
         &--wide {
@@ -100,6 +109,13 @@
 
         }
 
+    }
+
+    .wrapper {
+        background-image: url(../img/background-img.svg), $gradient-supersoft;
+        background-repeat: no-repeat;
+        background-position: top center;
+    
     }
 
 }

@@ -62,6 +62,12 @@
                 font-size: 16px;
                 line-height: 20px;
                 color: $main-alt-color;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: $accent-color;
+
+                }
 
             }
         }
